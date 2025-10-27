@@ -1,0 +1,9 @@
+.post_creation_form_wrapper {
+    margin-inline: 20%;
+}
+
+@media (max-width: 600px) {
+    .post_creation_form_wrapper {
+        margin-inline: 5%;
+    }
+}

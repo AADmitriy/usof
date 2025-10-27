@@ -1,0 +1,144 @@
+.Questions {
+    text-align: center;
+}
+
+.Questions-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: 20%;
+}
+
+.Questions-header p {
+    font-size: 1.5rem;
+}
+
+.Questions-header button {
+    padding: .4rem .6rem;
+    font-size: 1.2rem;
+    color: #007bff;
+    background-color: white;
+    border: solid 2px #007bff;
+    border-radius: 4px;
+    height: fit-content;
+    cursor: pointer;
+}
+.Questions-header button:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.QuestionsList {
+    margin-inline: 20%;
+}
+
+.post_filters {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: 20%;
+    margin-top: 2rem;
+    gap: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .post_filters,
+  .QuestionsList,
+  .Questions-header {
+      margin-inline: 5%;
+  }
+}
+
+.sort_options {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    border: solid 1.5px #007bff;
+    border-radius: 7px;
+    padding: .3rem .8rem;
+}
+
+.sort_options button {
+    padding: .4rem .6rem;
+    color: #007bff;
+    background-color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.sort_options button:hover {
+    background-color: rgb(224, 224, 224);
+}
+
+.status_filter {
+    font-size: 1.2rem;
+}
+
+.status_filter button {
+    font-size: 1.1rem;
+    padding: .4rem .6rem;
+    color: #007bff;
+    background-color: white;
+    border: solid 1px #0056b3;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+  
+.status_filter button:hover {
+    background-color: rgb(224, 224, 224);
+}
+
+#active_sort_order {
+    background-color: rgb(224, 224, 224);
+}
+
+.date_range_filter {
+    display: flex; 
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.date_range_filter label {
+    font-weight: bold;
+    color: #333;
+}
+
+.date_range_filter input[type="date"] {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    flex-grow: 1;
+}
+
+.date_range_filter button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.date_range_filter button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+    .date_range_filter {
+        flex-direction: column; 
+        align-items: stretch;
+    }
+
+    .date_range_filter input[type="date"] {
+        width: 100%;
+    }
+}

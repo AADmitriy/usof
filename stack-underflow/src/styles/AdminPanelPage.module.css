@@ -1,0 +1,44 @@
+
+.categories_list {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 20%;
+}
+
+.category_creation_form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-inline: 20%;
+    margin-block: 2rem;
+    border-top: solid 2px grey;
+    padding: 1.5rem;
+    border: solid 2px hsl(210,77%,46%);
+    border-radius: 10px;
+}
+
+.category_creation_form input {
+    font-size: 1.2rem;
+}
+
+.category_creation_form textarea {
+    width: 100%;
+    height: 25ch;
+    resize: block;
+    min-height: 10ch;
+    font-size: 1.1rem;
+    border-radius: .25rem;
+}
+
+.category_creation_form button {
+    width: fit-content
+}
+
+@media (max-width: 600px) {
+    .categories_list {
+        margin-inline: 5%;
+    }
+    .category_creation_form {
+        margin-inline: 5%;
+    }
+}

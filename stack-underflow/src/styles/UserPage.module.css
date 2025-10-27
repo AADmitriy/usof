@@ -1,0 +1,131 @@
+.User {
+    margin-inline: 20%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+
+@media (max-width: 600px) {
+    .User {
+        margin-inline: 5%;
+    }
+}
+
+.user_profile {
+    display: flex;
+}
+
+.avatar_placeholder {
+    height: 10rem;
+    width: 10rem;
+    aspect-ratio: 1 / 1;
+    margin-right: 2rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10rem;
+    font-weight: 700;
+    background-image: linear-gradient(white -300%, hsl(210, 85%, 44%));
+    color: white;
+}
+
+.avatar_image {
+    height: 10rem;
+    width: 10rem;
+    aspect-ratio: 1 / 1;
+    margin-right: 2rem;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.avatar_image img {
+    height: 100%;
+    max-width: 100%;
+}
+
+.avatar_placeholder span {
+    position: relative;
+    bottom: .5rem;
+}
+
+.account_name {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.login {
+    font-size: .95rem;
+    color: rgb(183, 183, 183);
+    margin: 0;
+}
+
+.user_page_navigation {
+    border-bottom: solid 2px grey;
+    background-color: whitesmoke;
+    padding-left: 10rem;
+}
+
+.user_page_navigation button {
+    border-bottom: solid 2px grey;
+    padding: .4rem .6rem;
+    color: rgb(153, 153, 153);
+    border: none;
+    font-size: 1.2rem;
+}
+
+.user_page_navigation button:hover {
+    background-color: rgb(250, 250, 250);
+}
+
+.user_page_navigation button.active_profile_part {
+    color: black;
+    border-top: solid 3px hsl(210, 85%, 44%);
+    border-left: solid 2px grey;
+    border-right: solid 2px grey;
+    border-bottom: none;
+    background-color: white;
+}
+
+.avatar_input_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    height: 10rem;
+    width: 10rem;
+    margin-right: 2rem;
+    aspect-ratio: 1 / 1;
+}
+
+.avatar_input_wrapper .avatar_placeholder {
+    margin-right:0;
+    filter: brightness(70%);
+}
+
+.avatar_input_preview {
+    width: 100%;
+    height: 100%;
+}
+
+.avatar_input_wrapper svg {
+    position: absolute;
+    width: 3rem;
+    fill: white;
+    transition: linear .15s;
+    z-index: 2;
+}
+
+.avatar_input_wrapper:hover svg {
+    transform: scale(1.2);
+}
+
+.avatar_input_wrapper input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 3;
+}

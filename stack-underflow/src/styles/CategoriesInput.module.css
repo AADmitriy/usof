@@ -1,0 +1,22 @@
+.categories_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: .5rem;
+    row-gap: 1.5rem;
+}
+
+.categories_container label{
+    border: solid 2px grey;
+    padding: .4rem .4rem;
+    position:relative;
+}
+
+.categories_container label:has(input[type="checkbox"]:checked) {
+    background-color: whitesmoke;
+    border: solid 2px hsl(210, 85%, 44%);
+}
+
+.categories_container label input {
+    opacity: 0;
+    position:absolute;
+}

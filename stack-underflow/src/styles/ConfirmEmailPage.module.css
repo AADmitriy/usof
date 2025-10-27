@@ -1,0 +1,30 @@
+.email_icon {
+    text-align: center;
+    transform: scale(1.2);
+    margin-block: 1rem;
+}
+
+.email_icon svg {
+    height: 8rem;
+    width: 8rem;
+    fill: orange
+}
+
+.email_confirmation_info {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.resend_email {
+    border: none;
+    color: white;
+    background: hsl(210, 85%, 44%);
+    padding: 10px;
+    border: solid 2px transparent;
+    border-radius: 5px;
+    margin-top: .3rem;
+}
+
+.resend_email:hover {
+    background: hsl(210, 84%, 32%);
+}

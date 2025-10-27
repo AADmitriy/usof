@@ -1,0 +1,11 @@
+.post_creation_form input {
+    width: 75%;
+    font-size: 1.2rem;
+}
+
+.post_creation_form textarea{
+    width: 100%;
+    height: 20ch;
+    min-height: 10ch;
+    font-size: 1.1rem;
+}

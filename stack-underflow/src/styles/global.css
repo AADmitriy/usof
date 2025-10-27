@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+  
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 2px lightgrey;
+    padding: .75rem 2rem;
+    height: 2rem;
+}
+
+.logo_container {
+    display: flex;
+    gap: .5rem;
+}
+
+.logo {
+    max-height: 1.75rem;
+    position: relative;
+    top: -.4rem;
+    transform: scaleX(-1) rotate(100deg);
+}
+
+.logo_link {
+    color:hsl(210, 85%, 44%);
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: bold;
+  }
+
+.desktop_links {
+    display: flex;
+    gap: 1rem;
+    font-size: .9rem;
+}
+
+.desktop_links > * {
+    padding: .4rem;
+    border-radius: .25rem;
+    color: hsl(210,77%,46%);
+    border: solid 1px hsl(210,77%,46%);
+    text-decoration: none;
+}
+
+.desktop_links a:hover {
+    color: white;
+    background-color: hsl(210,77%,46%);
+}
+
+
+.whitesmoke_content_wrapper {
+    background-color: whitesmoke;
+    height: calc(100vh - 3.5rem - 2px);
+    display: flex;
+}
+
+.default_form {
+    font-family: verdana;
+    font-weight: normal;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin-inline: auto;
+    width: 330px;
+    margin-top: 5rem;
+    padding: 40px;
+    padding-top: .5rem;
+    border-radius: 10px;
+    height: fit-content;
+}
+
+.form_error {
+    font-size: .95rem;
+    color:red;
+}
+
+.default_button {
+    padding: .4rem;
+    border-radius: .25rem;
+    color: hsl(210,77%,46%);
+    border: solid 1px hsl(210,77%,46%);
+    background-color: white;
+}
+
+.default_button:hover {
+    background-color: hsl(210,77%,46%);
+    color: white;
+}
+
+.ban_button {
+    padding: .4rem;
+    border-radius: .25rem;
+    color: hsl(13, 77%, 46%);
+    border: solid 1px hsl(3, 77%, 46%);
+    background-color: white;
+    width: fit-content;
+}
+
+.ban_button:hover {
+    background-color: hsl(3, 77%, 46%);
+    color: white;
+}
+
+.menu_wrapper {
+    display: none;
+    position: relative;
+}
+
+.menu_wrapper:hover .menu_links {
+    display:flex;
+}
+
+.menu_links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    bottom: -6rem;
+    right: 0;
+    height: 7rem;
+    border-radius: .25rem;
+    background-color: white;
+}
+
+.menu_links > * {
+    color: hsl(210,77%,46%);
+    background-color: white;
+    text-decoration: none;
+    padding: .4rem;
+    border-radius: .25rem;
+    width: 4rem;
+}
+
+.menu_links a:hover {
+    background-color: rgb(219, 219, 219);
+}
+
+@media (max-width: 600px) {
+    .menu_wrapper {
+        display: block;
+    }
+    .desktop_links {
+        display: none;
+    };
+}

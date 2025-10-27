@@ -1,0 +1,46 @@
+.Post {
+    margin-inline: 20%;
+}
+@media (max-width: 600px) {
+    .Post {
+        margin-inline: 5%;
+    }
+  }
+
+.post_layout {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.post_buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.comments_list_title {
+    font-size: 1.2rem;
+}
+
+.post_text_content {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.post_author_preview_wrapper {
+    align-self: end;
+}
+
+.post_edit_form {
+    position: relative;
+    padding: 1.5rem;
+    border: solid 2px hsl(210,77%,46%);
+    border-radius: 10px;
+}
+
+.post_edit_form > button {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 7rem;
+}

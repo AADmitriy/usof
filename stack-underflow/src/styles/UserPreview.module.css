@@ -1,0 +1,45 @@
+.user_info {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    background: whitesmoke;
+    padding: .5rem .8rem;
+}
+
+.user_preview_avatar {
+    height: 1.3rem;
+    width: 1.3rem;
+    aspect-ratio: 1 / 1;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.user_preview_avatar img {
+    height: 100%;
+    max-width: 100%;
+}
+
+.user_preview_avatar_placeholder {
+    height: 1.3rem;
+    width: 1.3rem;
+    aspect-ratio: 1 / 1;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .9rem;
+    font-weight: 700;
+    background-image: linear-gradient(white -300%, hsl(210, 85%, 44%));
+    color: white;
+}
+
+.user_preview_name {
+    font-size: .9rem;
+    margin: 0
+}
+
+.user_preview_rating {
+    font-size: .9rem;
+    font-weight:bold;
+    margin: 0;
+}

@@ -1,0 +1,56 @@
+.logout_form_wrapper {
+    background-color: whitesmoke;
+    height: calc(100vh - 3.5rem - 2px);
+    display: flex;
+}
+
+.logout_form {
+    font-family: verdana;
+    font-weight: normal;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin-inline: auto;
+    width: 330px;
+    margin-top: 5rem;
+    padding: 40px;
+    border-radius: 10px;
+    height: fit-content;
+}
+
+
+.exit_icon {
+    text-align: center;
+    transform: scale(1.2);
+    margin-block: 1rem;
+}
+
+.exit_icon svg {
+    height: 8rem;
+    width: 8rem;
+    fill: orange
+}
+
+.logout_form button {
+    background-color: whitesmoke;
+    border: solid 2px black;
+    font-size: 1.05rem;
+    padding-block: .8rem;
+    border-radius: .4rem;
+    margin-block: .4rem;
+}
+
+.logout_form button:hover {
+    background-color: rgb(209, 209, 209);
+}
+
+.logout_form button.logout_form_button {
+    background-color: black;
+    border: solid 2px rgb(255, 183, 50);
+    color: rgb(255, 183, 50);
+}
+
+.logout_form button.logout_form_button:hover {
+    border-color: rgb(255, 61, 61);
+    color:rgb(255, 61, 61);
+}
