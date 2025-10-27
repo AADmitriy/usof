@@ -1,0 +1,30 @@
+{
+  "name": "daheionok-6080",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server.js",
+    "setup_db": "mysql -u root -p -e \"source ./db_setup/db.sql; source ./db_setup/tables.sql; source ./db_setup/data.sql;\"",
+    "recreate_db": "npm run setup_db"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@git.green-lms.app:22022/challenge-370/daheionok-6080.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "express-session": "^1.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^2.0.2",
+    "mysql2": "^3.14.5",
+    "nodemailer": "^7.0.6"
+  }
+}

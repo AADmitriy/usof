@@ -1,0 +1,4 @@
+{
+    "waitForConnections": true,
+    "connectionLimit": 50
+  }
